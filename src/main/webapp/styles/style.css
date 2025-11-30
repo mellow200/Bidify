@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+* {
+            box-sizing: border-box;
+            
+        }
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+form#loggin {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form#loggin h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: green;
+}
+
+
+.check {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.check input {
+    margin-right: 8px;
+}
+
+.fieldloggin {
+    text-align: center;
+}
+
+.fieldloggin button {
+    background-color: green;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fieldloggin button:hover {
+    background-color: #006400; /* dark green on hover */
+}
+
+.reg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reg a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reg a:hover {
+    text-decoration: underline;
+}
+
+/*register*/
+
+
+.cotentregister {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#registerform h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.field-space {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.field-line{
+	margin-bottom: 20px;
+    gap: 10px;
+	
+}
+
+.field-space input {
+    
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.field-space input:focus {
+    outline: none;
+    border-color: green;
+}
+/* Make city, province, and country fields appear on one line */
+.field-line input{
+    width: calc(29% - 5px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+ 
+  
+}
+
+.check {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.check input {
+    margin-right: 8px;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit button {
+    background-color: green;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit button:hover {
+    background-color: #006400;
+}
+
+.backloggin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.backloggin a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.backloggin a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .field-space {
+        flex-direction: column;
+    }
+}
+

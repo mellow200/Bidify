@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/*Profile css*/
+           /* Global Styles */
+           body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Common form container astyle */
+        .accInfo, .delete, .lgout {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Headings */
+        .accInfo h2, .delete h2,.lgout h2 {
+            text-align: center;
+            color: #1f2937;
+            margin-bottom: 25px;
+        }
+        
+        /* Form labels */
+        form label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        /* Form inputs */
+        form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background-color: #f9fafb;
+            font-size: 14px;
+            transition: border 0.2s ease;
+        }
+        
+        form input:focus {
+            border-color: #2563eb;
+            background-color: #ffffff;
+            outline: none;
+        }
+        
+        /* Update button container */
+        .submit-details {
+            margin-top: 25px;
+            text-align: center;
+        }
+        
+        /* Update button style */
+        .change-details {
+            background-color: #10b981;
+            color: white;
+            padding: 10px 24px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .change-details:hover {
+            background-color: #059669;
+        }
+        
+        /* Delete button container */
+        .del-btn,.lgu {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        /* Delete button style */
+        .deletebt,.logout {
+            background-color: #000000;
+            color: white;
+            padding: 10px 24px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            
+        }
+        
+        .deletebt:hover {
+            background-color: #373434;
+        }
+     
+        }
+        .logout:hover {
+            background-color: #373434;
+        }
+        
+        /* Responsive design */
+
+        @media (max-width: 600px) {
+            .accInfo, .delete,.lgout {
+                padding: 20px;
+            }
+        
+            form input {
+                font-size: 13px;
+            }
+        
+            .change-details, .deletebt, .logout {
+                width: 100%;
+            }
+        }
+        
+        /*Home*/
+
+  
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width:100%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            color: #3b82f6;
+            margin-right: 8px;
+        }
+
+        .search-bar {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 33%;
+        }
+
+        .search-bar input {
+            border: none;
+            padding: 10px;
+            flex: 1;
+            outline: none;
+        }
+
+        .search-bar button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0 15px;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav a {
+            color: #374151;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        .cart-icon {
+            position: relative;
+        }
+
+        .cart-icon span {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: red;
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 9999px;
+        }
+
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slide {
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.5s;
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .overlay {
+            background-color: rgba(0,0,0,0.5);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 40px;
+        }
+
+        .slide-content h2 {
+            margin-left: 50px;
+            margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .slide-content p {
+            margin-left: 50px;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            background: #3b82f6;
+            color: white;
+            margin:60px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #60a5fa;
+        }
+
+        .nav-buttons, .dots {
+            position: absolute;
+            border: none;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 2;
+        }
+
+        .dots {
+            bottom: 20px;
+            top: auto;
+            justify-content: center;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: white;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: #3b82f6;
+        }
+        /*welcom*/
+        .welcome-section {
+            background-color: white;
+            padding: 60px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .welcome-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .welcome-text h2 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        
+        .welcome-text p {
+            font-size: 18px;
+            color: #4b5563;
+        }
+        
+        .welcome-buttons {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .welcome-buttons button {
+            padding: 12px 24px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .welcome-buttons button:hover {
+            background-color: #2563eb;
+        }
+        
+        /*flash bidding*/
+        .flash-biddings {
+            padding: 60px 40px;
+            background-color: #f3f4f6;
+        }
+        
+        .flash-biddings h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        
+        .search-bar button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .search-bar button:hover{
+            background: #2563eb;
+        }
+        
+        .filters {
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            background: #e5e7eb;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            color: #374151;
+        }
+        .filter-btn:hover{
+            background: #bbbcc0
+        
+        }
+        
+        .filter-btn.active {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+      
+        .card-content {
+            padding: 16px;
+        }
+        
+        .card-content h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #111827;
+        }
+        
+        .card-content p {
+            font-size: 14px;
+            color: #6b7280;
+        }
+        
+        .current-bid {
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .ends-in {
+            display: block;
+            font-size: 12px;
+            color: #ef4444;
+            margin: 10px 0;
+        }
+        
+        .bid-btn {
+            background: #f59e0b;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        
+        .bid-btn:hover {
+            background: #d97706;
+        }
+        
+        
+        
+        
+    

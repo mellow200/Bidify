@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+/*navbar*/
+
+nav{
+    background: #4A4947;
+    padding: 3px 50px;
+    display: flex;
+    align-items: center;
+    
+}
+nav a{
+    color: #fff;
+   
+}
+nav a:hover{
+    color:#dea180;
+}
+
+.logo{
+    flex:1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+.logo a:hover{
+    color:#dea180;
+
+}
+.logo img{
+    width:120px;
+    margin-right: 50px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+    
+}
+.menu li a{
+    text-decoration: none;
+}
+.container{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../img/payment.webp");
+    padding: 25px;
+   
+}
+
+.container form 
+{
+    width: 700px;
+    padding: 40px;
+    background-color: #5a4b307e;
+    border-radius: 10px;
+}
+
+form .row{
+    display: flex;
+    gap: 25px;
+}
+
+.row .column
+{
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box
+{
+    margin: 15px 0;
+}
+
+.input-box span
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.input-box input
+{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+
+
+span{
+    color: rgb(255, 255, 255);
+}
+
+.input-box img
+{
+    height: 34px;
+    margin-top: 5px;
+    
+}
+
+form .btn
+{
+    width:200px;
+    padding: 12px;
+    background-color: #bcb553b0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .btn:hover
+{
+    background-color: rgb(219, 168, 51);
+}
+/*footer*/
+ footer{
+    background-color: #4A4947;
+}
+.footerContainer{
+    width: 100%;
+    padding: 10px 20px 10px ;
+    
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*delete*/
+/* General Styles */
+
+/* Form Container */
+.delete {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+#del {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button */
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1520px;
+    background: url("../img/payment.webp");
+    color: #000;
+
+}
+
+.delete:hover {
+    background-color: #45a049;
+}
+
+/* Placeholder Style */
+#del::placeholder {
+    color: #999;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+#delete{
+    background-color: white; /* Green background */
+    border: none; /* Remove border */
+    color: black; /* White text */
+    padding: 12px 24px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline element */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+
+#delete_textbox{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
